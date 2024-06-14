@@ -153,4 +153,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
 }
