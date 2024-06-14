@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --primary-color: #004400;            /* Dark Green */
+    --secondary-color: #DDDDDD;          /* Light Gray */
+    --accent1-color: #000080;            /* Navy Blue */
+    --accent2-color: #FFDAB9;            /* Peach */
+    --nav-background-color: #000080;     /* Navy Blue */
+    --nav-link-color: #FFDAB9;           /* Peach */
+    --nav-hover-link-color: #004400;     /* Dark Green */
+    --nav-hover-background-color: #DDDDDD; /* Light Gray */
+
+    --heading-font: 'Playfair Display', serif;
+    --paragraph-font: "Noto Sans Display", sans
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+body {
+    background-color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+h1 {
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+h2 {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    padding: 10px;
+    margin: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    padding: 15px;
+    margin: 10px;
+    border-bottom: #000 solid;
+    text-align: center;
+}
+
+a {
+    color: var(--nav-link-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    font-size: 25px;
+}
+
+nav a {
+    padding: 10px 30px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+    
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    border: var(--primary-color) solid ;
+    border-radius: 25px;
+    margin: 15px;
+    padding: 0  0 15px;
+
+}
+
+.card img {
+    max-height: 200px;
+    padding: 15px;
+}
+
+.personal-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 100%;
+    padding: 15px;
+}
+
+
+.card.resources a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    background-color:  var(--primary-color);
+    transition: ease-in-out 0.3s;
+}
+
+.card.resources a:hover {
+    color: var(--accent2-color);
+    background-color: var(--accent1-color);
+}
+
+.country {
+    display: flex;
+}
+
+.country div p{
+    padding: 15px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Guilherme Gonzaga - This is a Home Page">
+    <meta name="Author" content="Guilherme Gonzaga">
+    <title>WDD 131 - Dynamic Web Fundamentals - Guilherme Gonzaga</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Guilherme Gonzaga</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Guilherme Gonzaga</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/guilhermemgonzaga/">linkedin</a>
+
+            <a href="https://byui.instructure.com/">I-learn</a>
+
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/8?lang=eng&id=p12#p12">Scripture</a>
+
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="personal-info">
+                <p>My name is Guilherme, but most people call me Gui. I was born in Brazil and currently work as an IT Support Assistant at a drugstore chain. I live with my wonderful wife and our three beloved cats, who bring a lot of joy to our lives. In my free time, I love immersing myself in movies, series, and animes, as well as playing video games and engaging in RPGs. These hobbies are a great way for me to unwind and enjoy my leisure time.</p>
+                <img src="images/profile.jpg" alt="Profile Picture">
+            </div>
+
+            <h3>Passo Fundo, Brazil</h3>
+            <div class="country">
+                <div>
+                    <img src="images/brazil-flag.webp" alt="Brazilian Flag">
+                    <p class="img-name">Brazilian Flag</p>
+                </div>
+                
+                <p>Passo Fundo is a city in the southern Brazilian state of Rio Grande do Sul. Known for its strong agricultural economy, it is a regional hub for education, healthcare, and commerce. The city hosts several universities and is recognized for its vibrant cultural scene, including theaters, museums, and festivals. With a population of around 200,000 people, Passo Fundo combines urban amenities with a rich rural heritage, making it a significant center for both economic and cultural activities in the region.</p>
+            </div>
+        </section>
+        <section class="card resources">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li>
+                    <a href="https://getcssscan.com/css-box-shadow-examples">CSS Box Shadow</a>
+                </li>
+
+                <li>
+                    <a href="https://cssgradient.io">CSS Gradient</a>
+                </li>
+
+                <li>
+                    <a href="https://www.theodinproject.com/paths/foundations/courses/foundations">The Odin Project Courses</a>
+                </li>
+
+                <li>
+                    <a href="https://www.frontendmentor.io">Frontend Mentor</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🏹Guilherme Gonzaga🏹 Passo Fundo, Brazil</p>
+
+        <p id="lastModified"></p>
+    </footer>
+    
 </body>
 </html>
