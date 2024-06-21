@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: none; /* Hide the nav links by default */
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 5px 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hamburger-menu {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Show the nav links when the .show class is added */
+.nav-links.show {  /* New class added */
+    display: block;
+}
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;           /* New: use flexbox */
+    flex-wrap: wrap;         /* New: allow items to wrap */
+    justify-content: center; /* New: center the items */
+    gap: 10px;               /* New: gap between items */
+}
+
+figure {
+    flex: 1 1 calc(100% - 20px);  /* New: responsive flex items */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}

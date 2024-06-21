@@ -1,0 +1,36 @@
+/* Larger view styles */
+@media screen and (min-width: 32rem) {
+
+    /* Larger view styles */
+    .nav-links {
+        display: flex !important;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .gallery {
+        display: grid;
+        /* Ensure grid layout is used */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* Responsive columns */
+        gap: 10px;
+        /* Gap between grid items */
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    figure img {
+        width: 100%;
+        /* Make image responsive */
+        height: auto;
+    }
+
+}
