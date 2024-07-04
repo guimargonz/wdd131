@@ -17,10 +17,13 @@
     .gallery {
         display: grid;
         /* Ensure grid layout is used */
+        justify-content: center;
+        align-items: center;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         /* Responsive columns */
         gap: 10px;
         /* Gap between grid items */
+
     }
 
     figure {
