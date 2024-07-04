@@ -1,7 +1,7 @@
 /* CSS Variables */
 :root {
-    --primary-color: #006994; /* Ocean blue */
-    --secondary-color: #4CAF50; /* Green */
+    --primary-color: #104960; /* Ocean blue */
+    --secondary-color: #2f4b30; /* Green */
     --accent-color: #FDD835; /* Yellow */
     --background-color: #F8F9FA; /* Light grey */
     --text-color: #333333; /* Dark grey */
@@ -60,7 +60,11 @@ section {
     box-shadow: var(--box-shadow);
 }
 
-h2 {
+header h2 {
+    color: var(--accent-color);
+}
+
+section h2 {
     color: var(--primary-color);
 }
 
