@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const lastModified = document.lastModified;
+    const {lastModified} = document;
     document.getElementById('last-modified').textContent = lastModified;
 
     const temperature = 25;
