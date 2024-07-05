@@ -16,6 +16,7 @@ header {
     background-color: #104960;
     color: #fff;
     padding: 10px;
+    
 }
 
 header h1 {
@@ -31,6 +32,7 @@ h2 {
     display: none; /* Hide the nav links by default */
     list-style: none;
     padding: 0;
+
 }
 
 .nav-links li {
@@ -41,7 +43,8 @@ h2 {
 .nav-links a {
     color: #fff;
     text-decoration: none;
-    padding: 15px;
+    max-width: 100%;
+    padding: 1rem 50px;
 }
 
 .nav-links a:hover {
@@ -59,11 +62,70 @@ h2 {
     background-color: steelblue;
 }
 
+.hamburger-menu {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+}
+.hamburger-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+.hamburger-menu span:nth-child(1) {
+    top: 25%;
+}
+.hamburger-menu span:nth-child(3) {
+    top: 75%;
+}
+.hamburger-menu.show span {
+    background-color: white;
+}
+.hamburger-menu.show span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.hamburger-menu.show span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-menu.show span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 /* Show the nav links when the .show class is added */
 .nav-links.show {
     display: block;
 }
 
+.off-screen-menu {
+    background-color: #104960;
+    ;
+    height: fit-content;
+    width: 100%;
+    max-width: 200px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    transition: .3s ease;
+    margin-top: 100px;
+}
+.off-screen-menu.show {
+    right: 0;
+}
 /* Main */
 main {
     padding: 20px;

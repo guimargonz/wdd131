@@ -3,10 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // Hamburger menu toggle
     const hamburger = document.querySelector('.hamburger-menu');
     const navLinks = document.querySelector('.nav-links');
+    const hamMenu = document.querySelector(".hamburger-menu");
 
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
-        hamburger.textContent = navLinks.classList.contains('show') ? 'X' : '☰';
+    const offScreenMenu = document.querySelector(".off-screen-menu");
+
+    hamMenu.addEventListener("click", () => {
+        hamMenu.classList.toggle("show");
+        offScreenMenu.classList.toggle("show");
     });
 
     // Array of Temple Objects
