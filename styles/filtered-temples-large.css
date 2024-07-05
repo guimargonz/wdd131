@@ -4,9 +4,6 @@
         display: flex !important;
     }
 
-    .nav-links li {
-        margin: 0 15px;
-    }
 
     .hamburger-menu {
         display: none;

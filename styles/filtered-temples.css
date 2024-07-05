@@ -32,7 +32,6 @@ h2 {
     display: none; /* Hide the nav links by default */
     list-style: none;
     padding: 0;
-
 }
 
 .nav-links li {
@@ -43,7 +42,7 @@ h2 {
     color: #fff;
     text-decoration: none;
     width: 100%;
-    padding: 1rem 50px ;
+    padding: 1rem ;
 }
 
 .nav-links li:hover {
