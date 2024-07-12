@@ -54,18 +54,16 @@ h2 {
     cursor: pointer;
     font-size: 24px;
     padding: 15px;
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
 }
 
 .hamburger-menu:hover{
     background-color: steelblue;
 }
 
-.hamburger-menu {
-    height: 50px;
-    width: 40px;
-    margin-left: auto;
-    position: relative;
-}
 .hamburger-menu span {
     height: 5px;
     width: 100%;
