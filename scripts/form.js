@@ -1,38 +1,22 @@
-// Product array of objects
-const products = [
-    { id: 1, name: 'Product 1' },
-    { id: 2, name: 'Product 2' },
-    { id: 3, name: 'Product 3' },
-    { id: 4, name: 'Product 4' },
-    { id: 5, name: 'Product 5' }
-];
+document.addEventListener('DOMContentLoaded', function() {
+    const products = [
+        { id: 'fc-1888', name: "flux capacitor", avgRating: 4.5 },
+        { id: 'fc-2050', name: "power laces", avgRating: 4.7 },
+        { id: 'fs-1987', name: "time circuits", avgRating: 3.5 },
+        { id: 'ac-2000', name: "low voltage reactor", avgRating: 3.9 },
+        { id: 'jj-1969', name: "warp equalizer", avgRating: 5.0 }
+    ];
 
-// Populate the select element with product options
-const productNameSelect = document.getElementById('productName');
-products.forEach(product => {
-    const option = document.createElement('option');
-    option.value = product.name;
-    option.textContent = product.name;
-    productNameSelect.appendChild(option);
-});
+    const productSelect = document.getElementById('productName');
 
-// Set the current year in the footer
-const yearSpan = document.getElementById('year');
-yearSpan.textContent = new Date().getFullYear();
+    products.forEach(product => {
+        const option = document.createElement('option');
+        option.value = product.name;
+        option.textContent = product.name;
+        productSelect.appendChild(option);
+    });
 
-// Set the last modified date in the footer
-const lastModifiedSpan = document.getElementById('lastModified');
-lastModifiedSpan.textContent = document.lastModified;
-
-// Handle the form submission and review counter
-document.querySelector('form').addEventListener('submit', (event) => {
-    event.preventDefault();  // Prevent the form from submitting normally
-
-    // Increment the review counter in localStorage
-    let reviewCount = localStorage.getItem('reviewCount') || 0;
-    reviewCount++;
-    localStorage.setItem('reviewCount', reviewCount);
-
-    // Redirect to the review.html page
-    window.location.href = 'review.html';
+    // Update footer year and last modified date
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = document.lastModified;
 });

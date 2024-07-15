@@ -1,12 +1,11 @@
+document.addEventListener('DOMContentLoaded', function() {
+    let reviewCount = localStorage.getItem('reviewCount') || 0;
+    reviewCount++;
+    localStorage.setItem('reviewCount', reviewCount);
 
-// Set the current year in the footer
-const yearSpan = document.getElementById('year');
-yearSpan.textContent = new Date().getFullYear();
+    document.getElementById('reviewCount').textContent = reviewCount;
 
-// Set the last modified date in the footer
-const lastModifiedSpan = document.getElementById('lastModified');
-lastModifiedSpan.textContent = document.lastModified;
-
-// Display the review count
-const reviewCountSpan = document.getElementById('reviewCount');
-reviewCountSpan.textContent = localStorage.getItem('reviewCount') || 0;
+    // Update footer year and last modified date
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = document.lastModified;
+});
