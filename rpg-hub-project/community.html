@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RPG Hub Community - Connect with RPG enthusiasts">
+    <meta name="author" content="Guilherme Martinez Gonzaga">
+    <title>Community - RPG Hub</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <script src="scripts/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>RPG Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Join the RPG Community</h2>
+            <p>Connect with fellow RPG enthusiasts, join groups, discuss strategies, and share your adventures.</p>
+        </section>
+
+        <section class="form-section">
+            <h2>Submit a New RPG Group</h2>
+            <form id="groupForm">
+                <label for="groupName">Group Name:</label>
+                <input type="text" id="groupName" name="groupName" required>
+                
+                <label for="groupDescription">Description:</label>
+                <textarea id="groupDescription" name="groupDescription" required></textarea>
+                
+                <label for="groupContact">Contact Information:</label>
+                <input type="text" id="groupContact" name="groupContact" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="group-list">
+            <h2>Existing Groups</h2>
+            <div id="groupsContainer">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentYear"></span> RPG Hub. All rights reserved.</p>
+        <p>Page last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

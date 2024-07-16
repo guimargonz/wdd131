@@ -1,0 +1,195 @@
+/* Default styles for large screens (desktop) */
+/* This is where you can place any default styles if needed */
+
+/* Styles for tablets and smaller devices */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+    }
+
+    header h1 {
+        margin-left: 30px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .highlights .rpg-item, .rpg-item {
+        flex: 1 1 100%;
+        max-width: none;
+    }
+
+    .highlights .rpg-item img, .rpg-item img {
+        max-height: 300px;
+    }
+
+    .form-section, .group-list {
+        width: 95%;
+    }
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #222;
+        width: 50%; /* Adjust as needed */
+        transition: max-height 0.3s ease-out;
+    }
+
+    nav ul.show {
+        max-height: 500px; /* Adjust as needed */
+    }
+
+    nav a {
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 480px) {
+    header {
+        padding: 15px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav a {
+        padding: 8px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .intro {
+        margin-bottom: 15px;
+    }
+
+    .resources-list {
+        gap: 15px;
+    }
+
+    .resource-item {
+        padding: 15px;
+    }
+
+    .resource-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .resource-item p {
+        font-size: 0.9rem;
+    }
+
+    .resource-item a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .highlights .rpg-item img, .rpg-item img {
+        max-height: 180px;
+    }
+
+    .highlights .rpg-item h3, .rpg-item h3 {
+        font-size: 1rem;
+    }
+
+    .highlights .rpg-item p, .rpg-item p {
+        font-size: 0.9rem;
+    }
+
+    .form-section input, .form-section textarea, .form-section button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .form-section button {
+        padding: 8px 12px;
+    }
+
+    .group-list .group-item h3 {
+        font-size: 1rem;
+    }
+
+    .group-list .group-item p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Styles for ultra-small devices (e.g., older phones) */
+@media (max-width: 320px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 5px 0;
+        font-size: 0.8rem;
+    }
+
+    .resource-item h3 {
+        font-size: 1rem;
+    }
+
+    .resource-item p {
+        font-size: 0.8rem;
+    }
+
+    .resource-item a {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    .highlights .rpg-item h3, .rpg-item h3 {
+        font-size: 0.9rem;
+    }
+
+    .highlights .rpg-item p, .rpg-item p {
+        font-size: 0.8rem;
+    }
+
+    .form-section input, .form-section textarea, .form-section button {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    .form-section button {
+        padding: 5px 10px;
+    }
+
+    .group-list .group-item h3 {
+        font-size: 0.9rem;
+    }
+
+    .group-list .group-item p {
+        font-size: 0.8rem;
+    }
+}
