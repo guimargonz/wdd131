@@ -153,6 +153,7 @@ main {
     background-color: #f39c12;
 }
 
+
 .form-section, .group-list {
     margin-top: 20px;
     padding: 20px;
@@ -161,6 +162,9 @@ main {
     border-radius: 10px;
     width: 100%;
     max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
 }
 
 .form-section form {
