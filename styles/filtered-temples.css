@@ -45,7 +45,7 @@ h2 {
     padding: 1rem ;
 }
 
-.nav-links li:hover {
+nav li:hover {
     background-color: steelblue;
 }
 
